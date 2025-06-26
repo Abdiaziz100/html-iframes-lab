@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>My Awesome Company Contact Page</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Form with Map</title>
+</head>
+<body>
 
-    <h1>Company Inc.</h1>
-    <h2>For all your incorporated company needs</h2>
+  <!-- Contact Form -->
+  <form>
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter Name" required />
 
-    <!-- Create an iframe tag-->
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter Email" required />
 
-  </body>
+    <label for="phone">Telephone</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter Telephone (optional)" />
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Enter Message"></textarea>
+
+    <label>
+      <input type="checkbox" name="contact_permission" />
+      I agree to be contacted
+    </label>
+
+    <input type="submit" value="Send" />
+  </form>
+
+  <!-- Embedded Google Map -->
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=YOUR_MAP_CODE_HERE"
+    width="100%"
+    height="400px"
+    frameborder="1"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+
+</body>
 </html>
